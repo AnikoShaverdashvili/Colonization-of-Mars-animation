@@ -22,7 +22,7 @@ body{
     bottom: 0;
     left: 0;
     background-repeat: repeat-x;
-    animation: moveright 20s linear infinite;
+    animation: straightforward 20s linear infinite;
 }
 .car{
     transition: all 7s linear 2s;
@@ -35,11 +35,12 @@ body{
     transition-duration: 15s;
     display: block;
     color: lightcoral;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .hide {
     display: none;
   }
-@keyframes moveright{
+@keyframes straightforward{
 100% {
     transform: translateX(-2950px);
 }}
@@ -58,12 +59,9 @@ body{
     letter-spacing:10px;
     text-align: center;
     position:absolute;
-    text-align: center;
-    vertical-align: middle;
     display: inline-block;
     font-size: 30px;
     font-weight: normal;
-    position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
