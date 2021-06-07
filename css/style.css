@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    overflow-y:hidden;
+}
+.night{
+    width:70vw;
+    height: 80vh;
+    margin: 5rem auto;
+    background: url(/images/back.png);
+    background-size: cover;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 10px 15px;
+    overflow-x: hidden;
+}
+.surface{
+    height: 210px;
+    width: 500%;
+    background: url(/images/back21.png);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    animation: moveright 20s linear infinite;
+}
+.car{
+    transition: all 7s linear 2s;
+    position: absolute;
+    bottom:1%;
+    left:3%;
+    animation: car 1s linear infinite;   
+}
+.myDIV:hover + .hide {
+    transition-duration: 15s;
+    display: block;
+    color: lightcoral;
+  }
+  .hide {
+    display: none;
+  }
+@keyframes moveright{
+100% {
+    transform: translateX(-2950px);
+}}
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }}
+.paragraph{
+    font-family: '3D Unicode';
+    letter-spacing:10px;
+    text-align: center;
+    position:absolute;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
