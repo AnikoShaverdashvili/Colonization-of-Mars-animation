@@ -10,12 +10,12 @@ body{
     background-image: url(../images/back.png);
     background-size: cover;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.4) 1px 10px 15px;
     overflow-x: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 10px 15px;
 }
 .surface{
     height: 210px;
-    width: 500%;
+    width:600%;
     background-image: url(../images/back21.png);
     display: block;
     position: absolute;
@@ -27,33 +27,17 @@ body{
 .car{
     transition: all 7s linear 2s;
     position: absolute;
-    bottom:1%;
-    left:3%;
+    bottom:2px;
+    left:px;
     animation: car 1s linear infinite;   
 }
 .myDIV:hover + .hide {
-    transition-duration: 15s;
     display: block;
     color: lightcoral;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .hide {
     display: none;
   }
-@keyframes straightforward{
-100% {
-    transform: translateX(-2950px);
-}}
-@keyframes car{
-    100%{
-        transform: translateY(-1px);
-    }
-    50%{
-        transform: translateY(6px);
-    }
-    0%{
-        transform: translateY(-1px);
-    }}
 .paragraph{
     font-family: '3D Unicode';
     letter-spacing:10px;
@@ -66,3 +50,19 @@ body{
     left:50%;
     transform: translate(-50%,-50%);
 }
+
+/*keyframes*/
+@keyframes straightforward{
+100% {
+    transform: translateX(-2950px);
+}}
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }}
